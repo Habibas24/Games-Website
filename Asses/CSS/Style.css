@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+--darkgray: #212121;
+--lightgray: #313131;
+--pinkcolor: #D5549F;
+--Mainfont :"Emblema One", system-ui ;
+--Secondreyfont :"Caveat", cursive;
+} 
+
+.Maincontainer{
+    width: 100%;
+
+    background-color: var(--darkgray);
+    padding: 3vh 7% 1vh ;
+}
+
+.Maincontainer .header{
+   width: 100%;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Maincontainer .header .logo{
+    width: 15%;
+}
+
+.Maincontainer .header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.Maincontainer .header .hline{
+    width: 1px;
+    height: 60%;
+    background-color: rgba(151, 156, 160, 0.452);
+}
+
+.Maincontainer .header .search{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--lightgray);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 12px 20px;
+    color : #6b6a6a ;
+    font-size: 25px;
+}
+.Maincontainer .header .search input{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 70%;
+
+}
+
+.Maincontainer .header ul{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.Maincontainer .header ul li a{
+    color:#6b6a6a;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+}
+.Maincontainer .header ul li a:hover{
+    color: var(--pinkcolor);
+    transition: 0.3s ease-in-out;
+}
+
+.Maincontainer .header ul .profile{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+    background-color: var(--lightgray);
+    color: aliceblue;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 3px 40px;
+}
+
+.active {
+    color: #ff4081; /* لون مميز */
+    font-weight: bold; /* اجعل الخط سميك */
+    text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+    /* تأثير الظل */
+    transition: all 0.3s ease-in-out; /* تأثير انتقال سلس */
+    
+}
+ 
+
+
+.Maincontainer .header ul .profile img{
+   
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Maincontainer .content{
+    width: 100%;
+    padding: 5vh 5% ;
+    background-color: var(--lightgray);
+    border-radius: 30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    margin-top: 50px;
+}
+
+.Maincontainer .content .banner{
+    width: 100%;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: 100% 100%;
+    padding: 5vh 7%;
+    border-radius: 30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    color: aliceblue;   
+}
+
+.Maincontainer .content .banner h1 span{
+    color: var(--pinkcolor);
+    font-family: var(--Mainfont);
+    font-size: 50px;
+    font-weight: bold;
+}
+.Maincontainer .content .banner h3{
+   font-size: 30px;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+}
+
+.Maincontainer .content .banner h1 {
+    font-size: 45px;
+    font-family: var(--Mainfont);
+    font-weight: bold;
+    margin: 25px 0;
+}
+.Maincontainer .content .banner button{
+    background-color: var(--pinkcolor);
+    color: aliceblue;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 25px;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+    border: none;
+}
+
+
+
+.Maincontainer .content .smallbanner {
+    width: 100%;
+    padding: 1vh 5% ;
+    background-color: var(--darkgray);
+    border-radius: 30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    margin-top: 30px;
+    
+    }
+
+
+.Maincontainer .content .smallbanner h3{
+    font-size: 40px;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+    color: aliceblue;
+}
+.Maincontainer .content .smallbanner h3 span{
+    color: var(--pinkcolor);
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+}
+
+.Maincontainer .content .smallbanner .cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* يجعل كل صف يحتوي على 4 كروت */
+    gap: 20px;
+
+}
+
+.Maincontainer .content .smallbanner .card {
+    background-color: var(--lightgray);
+    color: white;
+    padding: 16px;
+    width: 230px;
+    height: 250px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+    
+
+}
+
+/* Image Styling */
+.Maincontainer .content .smallbanner .card img {
+    width: 98%;
+    height: 130px;
+    border-radius: 20px ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+
+
+
+}
+
+/* Title & Category */
+.Maincontainer .content .smallbanner .card .game-title {
+    font-size: 15px;
+    font-family: var(--Mainfont);
+    margin: 10px 0 5px;
+}
+
+.Maincontainer .content .smallbanner .card .game-category {
+    color: #aaa;
+    font-size: 14px;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+}
+
+/* Rating & Downloads */
+.Maincontainer .content .smallbanner .card .game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Maincontainer .content .smallbanner .card .rating {
+    color: #806705;
+}
+
+.Maincontainer .content .smallbanner .card .downloads {
+    color: #520213;
+}
+
+.discoverbtn {
+    
+    background-color :var(--pinkcolor); /* لون الخلفية */
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px; 
+    display: block;
+    margin: 30px auto; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+    transition: 0.3s ease-in-out;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+    text-align: center; /* محاذاة النص في المنتصف */
+    text-decoration: none; /* إزالة التسطير من النص */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق الزر */
+    font-size: 20px; /* حجم الخط */
+
+}
+
+.discoverbtn:hover {
+    background-color: #4d032e; /* لون الخلفية عند التمرير */
+    transform: translateY(-2px); /* تحريك الزر لأعلى قليلاً عند التمرير */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التمرير */
+}
+
+
+
+    .library-container {
+        background-color: #1e1e1e;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        width: 100%;
+        height: 900%;
+        margin: auto;
+    }
+    
+    .library-title {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 20px;
+        font-family: var(--Mainfont);
+        font-weight: bold;
+    }
+    
+    .library-title span {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .library-title span:last-child {
+        color: var(--pinkcolor);
+    }
+    
+    .game-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: var(--Secondreyfont);
+
+    }
+    
+    .game-item {
+        display: flex;
+        align-items: center;
+        background-color: #292929;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .game-item img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    
+    .game-info {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .game-info h3 {
+        font-family: var(--Secondreyfont);
+        color: white;
+        margin: 0;
+    }
+    
+    .game-info p {
+        color: gray;
+        margin: 5px 0 0;
+    }
+    
+    .date, .hours, .status {
+        color: white;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .download-btn {
+        border: 2px solid var(--pinkcolor);
+        background: none;
+        color: var(--pinkcolor);
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+
+    .download-btn:hover {
+        background: #99001f;
+        color: white;
+    }
+    
+    
+    .view-library {
+        background-color: var(--pinkcolor);
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        display: block;
+        margin: 30px auto;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .view-library:hover {
+        background-color: var(--pinkcolor);
+    }
+    .footer {
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+
+    }
+    
+    .footer span {
+        color: #ff6584;
+        font-weight: bold;
+    }
+    

@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+--darkgray: #212121;
+--lightgray: #313131;
+--pinkcolor: #D5549F;
+--Mainfont :"Emblema One", system-ui ;
+--Secondreyfont :"Caveat", cursive;
+} 
+
+
+
+.Maincontainer{
+    width: 100%;
+
+    background-color: var(--darkgray);
+    padding: 3vh 7% 1vh ;
+}
+
+.Maincontainer .header{
+   width: 100%;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    color: #ff4081; 
+    font-weight: bold; 
+    text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+    transition: all 0.3s ease-in-out; 
+    
+}
+ 
+
+.Maincontainer .header .logo{
+    width: 15%;
+}
+
+.Maincontainer .header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.Maincontainer .header .hline{
+    width: 1px;
+    height: 60%;
+    background-color: rgba(151, 156, 160, 0.452);
+}
+
+.Maincontainer .header .search{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--lightgray);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 12px 20px;
+    color : #6b6a6a ;
+    font-size: 25px;
+}
+.Maincontainer .header .search input{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    width: 70%;
+
+}
+
+.Maincontainer .header ul{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.Maincontainer .header ul li a{
+    color:#6b6a6a;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Secondreyfont);
+    font-weight: bold;
+}
+.Maincontainer .header ul li a:hover{
+    color: var(--pinkcolor);
+    transition: 0.3s ease-in-out;
+}
+
+.Maincontainer .header ul .profile{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+    background-color: var(--lightgray);
+    color: aliceblue;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 3px 40px;
+}
+
+
+
+.Maincontainer .header ul .profile img{
+   
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container{
+    width: 100%;
+    padding: 5vh 5% ;
+    background-color: var(--lightgray);
+    border-radius: 30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    margin-top: 50px;
+
+}
+
+.game-details {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.game-header {
+    display: flex;
+    gap: 30px; /* زيادة المسافة */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.game-header img {
+    width: 450px;
+    height: 270px; 
+    border-radius: 20px;
+}
+
+.game-header .img2 {
+    position: relative;
+}
+
+.game-header .img2 img {
+    width: 760px; 
+    height: 270px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+
+h2 {
+    font-size: 40px;
+     margin-top: 60px ;
+     font-family: var(--Mainfont);
+     font-weight: 600;
+    
+}
+
+.game-full{
+    width: 100%;
+    padding: 5vh 5% ;
+    background-color: var(--darkgray);
+    border-radius: 30px;
+    -webkit-border-radius:  30px;
+    -moz-border-radius:  30px;
+    -ms-border-radius:  30px;
+    -o-border-radius:  30px;
+    margin-top: 50px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.info-card {
+    background: var(--lightgray);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* تحديد عمودين بنفس العرض */
+    gap: 10px; /* المسافة بين الأعمدة */
+}
+
+.info-card h3, .info-card h4 {
+    font-family: var(--Secondreyfont);
+    color: aliceblue;
+    font-size: 24px;
+    margin: 0; /* إزالة الهوامش الافتراضية */
+}
+
+.info-card h3 {
+    text-align: left;
+}
+
+.info-card h4 {
+    text-align: right;
+}
+
+
+.info-card table {
+    width: 200%; 
+    table-layout: fixed; 
+}
+
+.info-card table th {
+    text-align: center; /* لتحديد محاذاة النص في العناوين */
+    padding: 10px; /* إضافة حشو للعناصر */
+
+}
+
+.info-card table th i {
+    color: var(--pinkcolor);
+    font-size: 20px;
+}
+
+.info-card table td {
+    padding: 10px; 
+    text-align: center;
+    font-family: var(--Secondreyfont);
+    font-size: 20px;
+}
+
+
+
+.game-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.game-gallery img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.game-description {
+    font-size: 25px;
+    color: gray;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: var(--Secondreyfont);
+}
+
+.game-description a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight:bolder;
+}
+.download-btn {
+    width: 100%;  
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--pinkcolor);
+    background: transparent;
+    color: var(--pinkcolor);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--Mainfont);
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background: var(--pinkcolor);
+    color: white;
+    transform: scale(1.05);
+}
+
+.related-games {
+    margin-top: 40px;
+    background: var(--darkgray);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.related-games h2 {
+    color: aliceblue;
+    margin-top: -25px;
+    text-align: left;
+}
+
+.related-games h2 span {
+    color: var(--pinkcolor);
+}
+
+.related-list {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; /* المسافة بين العناصر */
+    justify-content: center;
+}
+
+.related-card {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    padding: 10px;
+    border-radius: 10px;
+    background: none; 
+    border-bottom: 1px solid gray; /* خط رفيع بين الصفوف */
+}
+
+.related-card img {
+    width: 70px;
+    border-radius: 20px;
+}
+
+.related-card h3, .related-card p {
+    color: aliceblue;
+    margin: 0; 
+    text-align: left;
+    font-family: var(--Secondreyfont);
+    font-size: 20px;
+}
+
+.related-card span {
+    color: aliceblue;
+    margin-left:100px ;
+    font-family: var(--Secondreyfont);
+    font-size: 20px;
+
+}
+.footer {
+    background-color: var(--lightgray);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer span {
+    color: #ff6584;
+    font-weight: bold;
+}
