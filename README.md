@@ -16,30 +16,13 @@ This project is a modern and responsive web design built using **HTML & CSS**. I
 
 - **HTML5** for semantic structure
 - **CSS3** for styling and layout
-- [Optional: Add any frameworks/libraries you used, e.g., Bootstrap]
 
-## Pages Description
+## Pages 
 
-### Home Page
-
-- Provides an overview of the website.
-- Showcases featured games with images and short descriptions.
-- Includes navigation to different sections.
-
-### Games Page
-
-- Displays a collection of games.
-- Each game has an image, title, rating, and download count.
-- Users can explore different categories of games.
-
-### Top Downloads Page
-
-- Lists the most downloaded games.
-- Displays rankings, game details, and download statistics.
-
-### Contact Page
-
-- Provides a contact form for users.
-- Includes links to social media and support options.
+_Home Page 
+_Browse page 
+_Streams Page
+_Details page 
+_Profile page 
 
 Feel free to check out the code and suggest improvements! 😊🚀
