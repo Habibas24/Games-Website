@@ -13,6 +13,20 @@
 --Secondreyfont :"Caveat", cursive;
 } 
 
+
+@media (max-width: 768px) {
+    .games {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+
+  
 .Maincontainer{
     width: 100%;
 
@@ -56,6 +70,7 @@
     padding: 12px 20px;
     color : #6b6a6a ;
     font-size: 25px;
+outline: none;
 }
 .Maincontainer .header .search input{
     background-color: transparent;
